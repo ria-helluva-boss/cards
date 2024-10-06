@@ -1,6 +1,8 @@
 .cards_container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: .3125rem;
+    padding-top: 1.875rem;
 }

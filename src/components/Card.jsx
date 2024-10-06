@@ -1,9 +1,20 @@
 import React from 'react';
 import styles from './Card.module.css';
+import { useState } from 'react';
 
 const Card = ({ call, price, currency, month, second, write, headerColor = '', mainColor = '', isTaller = false }) => {
+    
+    const [isSelected, setIsSelected] = useState(false);
+
+    const handleIsSelected = () => {
+        setIsSelected(!isSelected)
+    }
+    
     return (
-        <div className={styles.card}  style={{height: isTaller ? '31.25rem' : 'auto',}}>
+        <div className={`${styles.card} ${isSelected ? styles.card_selected : ''}`}
+        style={{ height: isTaller ? '24rem' : '22rem' }}
+        onClick={handleIsSelected}>
+
             <div className={styles.card_header} style={{ backgroundColor: headerColor }}>
                 {call}
             </div>

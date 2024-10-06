@@ -4,18 +4,16 @@
         width: 16.875rem;
         color: aliceblue;
     }
-    .card_taller{
-    height:37.5rem;
-    }
     .card_header { 
         padding: 1.25rem;
+        height: 10%;
     }
     
     .card_main {
         display: flex;
         justify-content: center;
         align-items: center; 
-        height: 30%; 
+        height: 50%; 
     }
     
     .card_main_text_container {
@@ -32,7 +30,7 @@
     }
     
     .card_main_text_container_large_text {
-        font-size: 5rem; 
+        font-size: 5.375rem; 
     }
     
     .card_main_text_container_small_text:last-child {
@@ -40,12 +38,22 @@
     }
     .card_footer_light {
         background-color: #c1c1c1; 
-        padding: 1.25rem; 
+        padding: .625rem; 
         color: #000000; 
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .card_footer_dark {
         background-color: #6c6c6c; 
-        padding: 1.25rem; 
+        padding: .625rem; 
         color: #000000; 
+        height: 20%;
+    }
+
+    .card_selected {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
